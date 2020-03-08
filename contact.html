@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        a:visited, a:active, a:hover, a {
+            color: grey;
+        }
+        footer {
+            border-top-width: thick;
+        }
+    </style>
     <title>Contact</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <h1 class="navbar-brand">Abigail Nielson</h1>
+                <h1 class="navbar-brand p-3 mb-2 bg-info text-white">Abigail Nielson</h1>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">About Me</a> | </li>
-                <li class="list-inline-item"><a href="portfolio.html">Portfolio</a> | </li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item text-secondary"><a href="index.html">About Me</a> | </li>
+                <li class="list-inline-item text-secondary"><a href="portfolio.html">Portfolio</a> | </li>
+                <li class="list-inline-item text-secondary"><a href="contact.html">Contact</a></li>
             </ul>
         </div>  
     </nav>
 
     <div class="">
-        <h2>Contact</h2>
+        <h2 class="text-info">Contact</h2>
 
         <br><br>
         
         <!--I'm assuming that we'll link this to a database in the future-->
-        <form id="" action="">
+        <form class="text-secondary" action="">
             <p>Name</p>
             <label for="name"></label>
             <input type="text" id="" name="name"><br><br>
@@ -39,9 +47,9 @@
             <input type="submit" id="" value="Submit">
         </form>
     </div> 
-
-    <footer>
-        <p>Copyright 2020</p>
+    <br><br>
+    <footer class="border-top border-info">
+        <p class="text-light bg-secondary text-center p-4 mb-2">Copyright 2020</p>
     </footer>
 </body>
 </html>
