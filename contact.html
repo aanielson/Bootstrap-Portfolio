@@ -15,39 +15,40 @@
     <title>Contact</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <h1 class="navbar-brand p-3 mb-2 bg-info text-white">Abigail Nielson</h1>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item text-secondary"><a href="index.html">About Me</a> | </li>
-                <li class="list-inline-item text-secondary"><a href="portfolio.html">Portfolio</a> | </li>
-                <li class="list-inline-item text-secondary"><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>  
-    </nav>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid row">
+                <div class="col-md-4 p-0">
+                    <h1 class="navbar-brand p-3 mb-2 bg-info text-white">Abigail Nielson</h1>
+                </div>
+                <ul class="list-inline col-md-3">
+                    <li class="list-inline-item text-secondary"><a href="index.html">About Me</a> | </li>
+                    <li class="list-inline-item text-secondary"><a href="portfolio.html">Portfolio</a> | </li>
+                    <li class="list-inline-item text-secondary"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>  
+        </nav>
 
-    <div class="">
-        <h2 class="text-info">Contact</h2>
+        <div class="row">
+            <h2 class="col-md-11 l-3 p-2 text-left text-info border-bottom">Contact</h2>
+        </div>
 
+        <div class="row">  
+            <form class="col-md-12 l-3 p-2 text-secondary" action="">
+                <p class="col-md-12 l-3">Name</p>
+                <label for="name"></label>
+                <input type="text" class="p-4 col-md-11" name="name"><br><br>
+                <p class="col-md-12">Email</p>
+                <label for="email"></label>
+                <input type="text" class="p-4 col-md-11" name="email"><br><br>
+                <p class="col-md-12">Message</p>
+                <label for="message"></label>
+                <input type="text" class="p-4 col-md-11" name="message"><br><br>
+                <input type="button" class="btn btn-light" value="Submit">
+            </form>
+        </div> 
         <br><br>
-        
-        <!--I'm assuming that we'll link this to a database in the future-->
-        <form class="text-secondary" action="">
-            <p>Name</p>
-            <label for="name"></label>
-            <input type="text" id="" name="name"><br><br>
-            <p>Email</p>
-            <label for="email"></label>
-            <input type="text" id="" name="email"><br><br>
-            <p>Message</p>
-            <label for="message"></label>
-            <input type="text" id="" name="message"><br><br>
-            <input type="submit" id="" value="Submit">
-        </form>
-    </div> 
-    <br><br>
+    </div>
     <footer class="border-top border-info">
         <p class="text-light bg-secondary text-center p-4 mb-2">Copyright 2020</p>
     </footer>
